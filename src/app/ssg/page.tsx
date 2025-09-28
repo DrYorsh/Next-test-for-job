@@ -1,4 +1,5 @@
 import type { Post } from "@/shared/types/post.interface";
+import Link from "next/link";
 
 async function getPosts(): Promise<Post[]> {
   // Данные загружаются во время сборки (build time)
@@ -48,12 +49,12 @@ export default async function SSGPage() {
         </div>
         
         <div className="text-center">
-          <a 
+          <Link 
             href="/" 
             className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
           >
             ← Назад к главной
-          </a>
+          </Link>
         </div>
       </div>
     </div>

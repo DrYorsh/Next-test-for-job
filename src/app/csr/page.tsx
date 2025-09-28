@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import type { Product } from '@/shared/types/product.interface';
+import Link from 'next/link';
 
 
 export default function CSRPage() {
@@ -90,12 +91,12 @@ export default function CSRPage() {
         </div>
 
         <div className="text-center">
-          <a
+          <Link
             href="/"
             className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition-colors"
           >
             ← Назад к главной
-          </a>
+          </Link>
         </div>
       </div>
     </div>

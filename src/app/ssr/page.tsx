@@ -1,4 +1,5 @@
 import type { User } from '@/shared/types/user.interface';
+import Link from 'next/link';
 
 async function getUsers(): Promise<User[]> {
   // Имитация загрузки данных с внешнего API
@@ -42,12 +43,12 @@ export default async function SSRPage() {
         </div>
 
         <div className="text-center">
-          <a
+          <Link
             href="/"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
           >
             ← Назад к главной
-          </a>
+          </Link>
         </div>
       </div>
     </div>

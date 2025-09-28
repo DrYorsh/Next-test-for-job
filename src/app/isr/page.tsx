@@ -1,4 +1,5 @@
 import type { Comment } from "@/shared/types/comment.interface";
+import Link from "next/link";
 
 async function getComments(): Promise<Comment[]> {
   // ISR: страница будет перегенерирована максимум каждые 60 секунд
@@ -45,12 +46,12 @@ export default async function ISRPage() {
         </div>
         
         <div className="text-center">
-          <a 
+          <Link 
             href="/" 
             className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors"
           >
             ← Назад к главной
-          </a>
+          </Link>
         </div>
       </div>
     </div>
