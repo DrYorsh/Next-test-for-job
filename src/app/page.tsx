@@ -88,7 +88,7 @@ export default function Home() {
           <ModalForm onClose={() => setModal(false)}/>
         </Modal>}
 
-        <button className='fixed bottom-5 right-5 rounded-full bg-red-700 text-white text-2xl px-4 py-2' onClick={() => setModal(true)}>+</button>
+        <button className='fixed bottom-5 right-5 rounded-full bg-red-700 text-white text-2xl px-4 py-2' onClick={() => setModal(true)}>+ Modal</button>
       </div>
     </div>
   );
